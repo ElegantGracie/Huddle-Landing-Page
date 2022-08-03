@@ -1,0 +1,139 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(../images/bg-mobile.svg) no-repeat center hsl(257, 40%, 49%);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* Logo and Hero Image */
+.logo-image {
+    width: 30vw;
+    min-width: 150px;
+    max-width: 250px;
+    margin: 30px;
+}
+.hero-image {
+    width: 80vw;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.hero-image img, 
+.logo-image img {
+    width: 100%;
+}
+/* Texts */
+.texts {
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+}
+.texts h1 {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.texts p {
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 10px auto;
+    line-height: 1.5em;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Button  */
+.texts button {
+    margin: 10px auto;
+    padding: 10px;
+    width: 170px;
+    color: hsl(257, 40%, 49%);
+    border-radius: 20px;
+    border: none;
+}
+.texts button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+/* Social Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.icons div {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.icons div:hover {
+    border: 1px solid deeppink;
+    color: deeppink;
+    cursor: pointer;
+}
+.icons div i {
+    color: white;
+}
+.icons div i:hover {
+    color: deeppink;
+}
+/* Footer Text  */
+.attribution { 
+    font-size: 1em; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(300, 69%, 71%); 
+}
+
+/* Larger Screens  */
+@media (min-width: 600px){
+    body {
+        background: url(../images/bg-desktop.svg) no-repeat fixed hsl(257, 40%, 49%);
+        padding: auto;
+        height: 100%; 
+    }
+    .container {
+        padding: 10px auto;
+    }
+   .content {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-evenly;
+   } 
+   .hero-image {
+    width: 60%;
+   }
+   .texts {
+    width: 40%;
+    text-align: justify;
+   }
+   .texts h1 {
+    font-size: 1.5em;
+   }
+   .texts p {
+    line-height: unset;
+    font-size: 1em;
+   }
+   .texts button {
+    width: 130px;
+   }
+   .icons {
+    justify-content: right;
+    padding-right: 25px;
+   }
+}
